@@ -1,25 +1,62 @@
-html {
+body {
     background-color: #FdF9Fd;
     color: #2D3047;
     text-align: center;
     box-sizing: border-box;
+    
 }
-h1{
+#container {
+    margin: 1px;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr; 
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px 10px 
+}
+#name{
     font-family: 'Permanent Marker', cursive;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border: 2px solid black;
+    padding: 1.5rem;
 }
 #navBar{
-    width: 100%;
+    grid-column: 1 / 4;
+    /*width: 100%;*/
     display: flex;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
-    height: 5rem;
+    /*height: 5rem;*/
     margin: 0;
     padding:0;
     
+}
+#imageBorder {
+       
+    grid-column: 3 / 4;
+    grid-row: 3 / 6;      
+    font-size: 0;
+    border: 2px solid black; 
+}
+#image1  {
+    width: 100%;
+    height: 100%;
+}
+#image2 {
+    width: 100%;
+    height: 100%;
+}
+#image2Border {
+    grid-column: 1 / 2;
+    grid-row: 3 / 6;
+    font-size: 0;
+    border: 2px solid black; 
+}
+
+
 
     
-}
+
 
 .navItem {
     list-style: none;
@@ -27,4 +64,43 @@ h1{
     font-size: 1.5rem;
     font-family: 'Glory', sans-serif;
 
+}
+#aboutMe {
+    grid-column: 2 / 3;
+    grid-row: 3 / 6;
+    border: 2px solid black;
+    font-size: 1.25rem;
+    font-family: 'Architects Daughter', cursive;
+    padding: 1rem; 
+}
+#aboutMe p {
+    text-align: left;
+}
+#skills{
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.25rem;
+    border: 2px black solid;
+}
+
+#skillList{
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding:0;
+}
+.lang{
+    width: 14%;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.lang img{
+    height: 50%;
+    width: 50%;
 }
