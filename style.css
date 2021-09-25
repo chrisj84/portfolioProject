@@ -216,7 +216,7 @@ a {
 
     .navItem {
         margin-right: 1rem;
-        font-size: 1.0rem;
+        font-size: 0.75rem;
         
     
     }
@@ -239,8 +239,8 @@ a {
 #containerPicture {
     margin: 1px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 4rem 10rem 30rem  14rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4rem 4rem 30rem  20rem 20rem;
     grid-auto-rows: 14rem;
     gap: 10px 10px;
 }
@@ -249,21 +249,80 @@ a {
     grid-row: 3/4;
     border: 3px solid black;
     background-color: #4B88A2;
+    margin-bottom: 30px
 }
 #picList{
 
     grid-column: 1/4;
-    grid-row: 4/5;
+    grid-row: 4/6;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 .thumbNail{
     list-style: none;
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 150px;
     
 }
 .thumbNail img {
     height:100%;
     width:100%;
+}
+#mainPicture{
+    height: 100%;
+    width: auto;
+}
+#caption{
+    font-size: 1.25rem;
+    font-family: 'Permanent Marker', cursive;
+}
+@media only screen and (max-width: 1400px){
+    #containerPicture {
+        
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 4rem 4rem 20rem 20rem 20rem;
+                
+    }
+    
+
+}
+@media only screen and (max-width: 800px){
+    #containerPicture {
+        
+        grid-template-columns: 1fr 4fr 1fr;
+                
+    }
+    #mainPicture{
+        height: 75%;
+        width: auto;
+    }
+    #galleryTitle{
+    
+        
+        grid-column: 1/4;
+        font-size: 0.75rem;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    #caption{
+        font-size: 0.75rem;
+        
+    }
+    #frame{
+        grid-column: 1/4;
+        
+        
+    }
+    #mainPicture{
+        height: 75%;
+        max-width: 100%;
+    }
+    .thumbNail{
+        height: 50px;
+        width: 70px;
+    }
+
 }

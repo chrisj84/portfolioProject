@@ -4,8 +4,9 @@
     <head>
         <script>
             
-            function test (){
-                console.log("hello!!"); 
+                function changePic (picture, cap){
+                document.getElementById("mainPicture").src= picture;
+                document.getElementById("caption").innerHTML= cap;
             }
         </script>
         <meta charset="utf-8">
@@ -29,28 +30,29 @@
         <div id="galleryTitle">
             <h1>Picture Gallery</h1>
         </div>
-        <div id="frame">
+        <figure id="frame">
+            
+            <img id="mainPicture" src="" alt="">
+            <figcaption id="caption"></figcaption>
 
-
-        </div>
+        </figure>
         <ul id="picList">
-            <li class="thumbNail"><img src="pics/blueFlowerT.jpg" alt="Blue Flower" onclick="test();"></li>
-            <li class="thumbNail"><img src="pics/chine1T.jpg" alt="Chine"></li>
-            <li class="thumbNail"><img src="pics/chine2T.jpg" alt="Chine"></li>
-            <li class="thumbNail"><img src="pics/crossingT.jpg" alt="Ferry crossing"></li>
-            <li class="thumbNail"><img src="pics/f1CarT.jpg" alt="Williams F1 Car"></li>
-            <li class="thumbNail"><img src="pics/ferryT.jpg" alt="Ferry Meadows"></li>
-            <li class="thumbNail"><img src="pics/hunstantonT.jpg" alt="Hunstanton CLiff"></li>
-            <li class="thumbNail"><img src="pics/needlesT.jpg" alt="Isle of Wight Needles"></li>
-            <li class="thumbNail"><img src="pics/parrotT.jpg" alt="Parrot"></li>
-            <li class="thumbNail"><img src="pics/poppyT.jpg" alt="Poppy Cat"></li>
-            <li class="thumbNail"><img src="pics/poshT.jpg" alt="Peterborough United"></li>
-            <li class="thumbNail"><img src="pics/sandown1T.jpg" alt="Sandown Pier"></li>
-            <li class="thumbNail"><img src="pics/sandown2T.jpg" alt="Sandown Pier 2"></li>
-            <li class="thumbNail"><img src="pics/snowmanT.jpg"  alt="Snowman"></li>
-            <li class="thumbNail"><img src="pics/tiredPopT.jpg" alt="Sleeping Poppy"></li>
-            <li class="thumbNail"><img src="pics/xmasPop1.jpg" alt="Poppy and Christmas tree"></li>
-            <li class="thumbNail"><img src="pics/yellowFlower1.jpg" alt="Yellow Flower"></li>
+            <li class="thumbNail"><img src="pics/blueFlowerT.jpg" alt="Blue Flower" onclick="changePic('pics/blueFlower.jpg', 'Blue Flower');"></li>
+            <li class="thumbNail"><img src="pics/chine1T.jpg" alt="Chine" onclick="changePic('pics/chine1.jpg', 'Shanklin Chine Isle of Wight');"></li>
+            <li class="thumbNail"><img src="pics/chine2T.jpg" alt="Chine"onclick="changePic('pics/chine2.jpg', 'Shanklin Chine Isle of Wight');" ></li>
+            <li class="thumbNail"><img src="pics/crossingT.jpg" alt="Ferry crossing" onclick="changePic('pics/crossing.jpg', 'Ferry Crossing to Isle of Wight');"></li>
+            <li class="thumbNail"><img src="pics/f1CarT.jpg" alt="Williams F1 Car" onclick="changePic('pics/f1Car.jpg', 'Williams F1 Car from National Mortor Museum');"></li>
+            <li class="thumbNail"><img src="pics/ferryT.jpg" alt="Ferry Meadows" onclick="changePic('pics/ferry.jpg', 'Ferry Meadows');"></li>
+            <li class="thumbNail"><img src="pics/hunstantonT.jpg" alt="Hunstanton CLiff" onclick="changePic('pics/Hunstanton.jpg', 'Cliff at Hunstanton');"></li>
+            <li class="thumbNail"><img src="pics/needlesT.jpg" alt="Isle of Wight Needles" onclick="changePic('pics/needles.jpg', 'Needes Isle of Wight');"></li>
+            <li class="thumbNail"><img src="pics/poppyT.jpg" alt="Poppy Cat" onclick="changePic('pics/poppy.jpg', 'Poppy Cat');"></li>
+            <li class="thumbNail"><img src="pics/poshT.jpg" alt="Peterborough United" onclick="changePic('pics/posh.jpg', 'Peterborough United v Rochdale 2020');"></li>
+            <li class="thumbNail"><img src="pics/sandown1T.jpg" alt="Sandown Pier" onclick="changePic('pics/sandown1.jpg', 'Sandown Pier Isle of Wight');"></li>
+            <li class="thumbNail"><img src="pics/sandown2T.jpg" alt="Sandown Pier 2" onclick="changePic('pics/sandown2.jpg', 'Sandown Pier Isle of Wight');"></li>
+            <li class="thumbNail"><img src="pics/snowmanT.jpg"  alt="Snowman" onclick="changePic('pics/snowman.jpg', 'Snowman');"></li>
+            <li class="thumbNail"><img src="pics/tiredPopT.jpg" alt="Sleeping Poppy" onclick="changePic('pics/tiredPop.jpg', 'Sleepy Poppy Cat');"></li>
+            <li class="thumbNail"><img src="pics/xmasPop1.jpg" alt="Poppy and Christmas tree" onclick="changePic('pics/xmasPop.jpg', 'Poppy Cat in Front of Xmas Tree');"></li>
+            <li class="thumbNail"><img src="pics/yellowFlower1.jpg" alt="Yellow Flower" onclick="changePic('pics/yellowFlower.jpg', 'Yellow Flower');"></li>
         </ul>
         </div>
     </body>
