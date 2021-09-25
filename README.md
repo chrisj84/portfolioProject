@@ -8,13 +8,14 @@ Create a porfolio website using HTML and CSS using version control. This should 
 
 ### Tasks
 
-- Start Version Control
-- Design and wire frame the webpages
-- Design and plan JS feature 
-- Complete HTML for pages
-- Implement CSS style and JS feature
+- Start Version Control - completed
+- Design and wire frame the webpages -completed 
+- Design and plan JS feature -completed
+- Complete HTML for pages -completed 
+- Implement CSS style and JS feature -completed 
 - Check website works as expected off-line with different screen sizes and check A11y
 - Publish online under chrismjoyce.me
+
 
 
 
